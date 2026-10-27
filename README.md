@@ -33,7 +33,7 @@
 
 ```bash
 # 1. 放进 Agent 的 skills 目录（Claude Code 是 ~/.claude/skills/）
-git clone <本仓库地址> ~/.claude/skills/bighead-collage
+git clone https://github.com/HeyChengC/bighead-collage ~/.claude/skills/bighead-collage
 cd ~/.claude/skills/bighead-collage
 
 # 2. 依赖
@@ -48,7 +48,7 @@ python scripts/doctor.py
 或者把这句话发给你的 Agent，让它帮你装：
 
 ```text
-请帮我安装这个 skill：<本仓库地址>，克隆到我的 skills 目录，按 README 装好 Python 和 Node 依赖，最后运行 scripts/doctor.py 确认全部通过。
+请帮我安装这个 skill：https://github.com/HeyChengC/bighead-collage，克隆到我的 skills 目录，按 README 装好 Python 和 Node 依赖，最后运行 scripts/doctor.py 确认全部通过。
 ```
 
 > 没有 NVIDIA 显卡也能用，语音识别会走 CPU，慢一些。可以设环境变量 `WHISPER_MODEL=small` 换小模型（默认 large-v3，第一次运行会下载约 3GB）。
@@ -126,7 +126,7 @@ scripts/              引擎、配音、生图、抠图、音效、混音、渲�
 
 ## 引用说明
 
-- 这个风格学自 Instagram / TikTok 账号 **earn.edits**（[earnedits.com](https://earnedits.com)）的两条短片：《巴菲特囤现金》和《西尔斯邮购目录》。`anchors/taste_board.jpg`、`anchors/gap_pairs.jpg`、`anchors/detail.jpg` 里有这两条片的截帧，`style-card.md` 里引用了它们的时间点，仅用于说明风格、学习研究。版权归原作者所有。**如有侵权，请提 issue 联系，我们会立即删除。**
+- 这个风格学自 Instagram / TikTok 账号 **earn.edits**（[earnedits.com](https://earnedits.com)）的两条短片：《巴菲特囤现金》和《西尔斯邮购目录》。`anchors/taste_board.jpg`、`anchors/gap_pairs.jpg`、`anchors/detail.jpg` 里有这两条片的截帧，`style-card.md` 里引用了它们的时间点，仅用于说明风格、学习研究。版权归原作者所有。**如有侵权，请在 [Issues](https://github.com/HeyChengC/bighead-collage/issues) 联系，我们会立即删除。**
 - 示例片子里芒格、巴菲特的脸参考了维基共享资源的照片（CC BY 2.0 / CC BY-SA 2.0），人物形象由 AI 生成。
 - 字体：Anton、思源黑体（Noto Sans SC）、得意黑（Smiley Sans），均为 SIL Open Font License 1.1，协议见 `scripts/fonts/`。
 - 人脸检测模型 `scripts/face_yunet.onnx` 来自 [OpenCV Zoo](https://github.com/opencv/opencv_zoo)（YuNet，MIT）。
