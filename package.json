@@ -1,0 +1,9 @@
+{
+  "name": "bighead-collage",
+  "private": true,
+  "description": "大头拼贴人物短片 skill 的渲染依赖（逐帧截图用 playwright）",
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

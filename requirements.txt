@@ -1,0 +1,12 @@
+numpy
+scipy
+pillow
+opencv-python
+librosa
+soundfile
+faster-whisper
+rembg[cpu]
+onnxruntime
+edge-tts
+# 只有 image.provider = openai 或用 tts_examples/openai_tts.py 时才要
+openai

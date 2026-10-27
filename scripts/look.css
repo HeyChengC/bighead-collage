@@ -1,0 +1,32 @@
+/* 大头剪贴风的字：颜色类 + 字体。挤出/投影用 stage.js 的 STAGE.LOOK（写在层的 filter 里）。 */
+@font-face{font-family:Anton;src:url(Anton-Regular.ttf)}
+@font-face{font-family:CNHeavy;src:url(NotoSansSC-VF.ttf);font-weight:100 900}
+@font-face{font-family:Smiley;src:url(SmileySans-Oblique.ttf)}
+html,body{margin:0;background:#000;overflow:hidden;width:100%;height:100%}
+.w span{display:inline-block;white-space:nowrap;line-height:1;font-family:Anton,CNHeavy,sans-serif;font-weight:900}
+/* 中文：思源黑 Black，横向压窄（像 Anton 那样的窄粗字）；数字和英文仍走 Anton */
+.cn span{font-family:Anton,CNHeavy,sans-serif;font-weight:900;transform:scaleX(.86);transform-origin:0 50%;letter-spacing:-.01em}
+.smiley span{font-family:Smiley,Anton,sans-serif;font-weight:400}
+/* 橙黄渐变：人名、年份、片子的"名字" */
+.orange span{background:linear-gradient(180deg,#ffe04a 0%,#ffb21a 45%,#f47a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* 暗红带高光：处境、问题 */
+.red span{background:linear-gradient(180deg,#d9545a 0%,#a3222a 40%,#7c1118 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* 亮红：关键数字 */
+.hot span{color:#d8242b}
+/* 白：一组里最后那个重点词 */
+.white span{color:#fbf7f0}
+/* 深灰：浅色纸面上的字 */
+.ink span{color:#2b2b2b}
+/* 贴条：白纸条 + 黑窄字（回答、名字标签） */
+.label span{background:#f4f1ea;color:#1d1d1d;padding:.06em .22em .02em}
+/* 黑板粉笔字：圆头粗体发白光 */
+.chalk span{font-family:'Arial Rounded MT Bold',CNHeavy,sans-serif;font-weight:900;color:#f3f3ee}
+/* 只描边 */
+.outline span{color:transparent;-webkit-text-stroke:4px #f6f2ea}
+
+/* 字幕（STAGE.captions）：思源黑体 Bold 700——短视频字幕的常用字重，小字号也不糊；和 900 的关键词一眼分开
+   两层叠：下层黑字 + 粗描边当外描边，上层白字；不做动画 */
+.cap{position:relative}
+.cap span{display:block;white-space:nowrap;font-family:CNHeavy,sans-serif;font-weight:700;font-size:62px;line-height:1.1;letter-spacing:.03em}
+.cap .o{color:#111;-webkit-text-stroke:11px #111;filter:drop-shadow(0 5px 10px rgba(0,0,0,.45))}
+.cap .f{position:absolute;left:0;top:0;color:#fff}
