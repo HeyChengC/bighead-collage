@@ -6,10 +6,6 @@
 
 ![用这个 skill 做出来的画面](anchors/own_taste_board.jpg)
 
-同一个题目、同一段配音，不用 skill（左）和用 skill（右）：
-
-![不用 skill vs 用 skill](anchors/own_gap_pairs.jpg)
-
 ---
 
 ## 它会替你做什么
@@ -134,3 +130,7 @@ scripts/              引擎、配音、生图、抠图、音效、混音、渲�
 ## 协议
 
 代码和文档：MIT（见 `LICENSE`）。字体、第三方截帧和模型按上面各自的协议。
+
+## 友情链接
+
+https://linux.do/

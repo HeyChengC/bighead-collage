@@ -13,7 +13,7 @@ description: 大头剪贴人物短片：9:16 竖屏、15–60 秒，讲一个大
 ## 先看四样东西
 
 1. `anchors/taste_board.jpg`：好在哪（参考片 12 个时刻）；`anchors/own_taste_board.jpg`：用这份 skill 做出来的 12 个时刻。
-2. `anchors/gap_pairs.jpg`：不看这份 skill 时最容易做出来的（扁平矢量、放射光底、人缩成角落头像、整句字幕）vs 参考；`anchors/own_gap_pairs.jpg`：同一题目、同一段配音，不用 skill vs 用 skill。
+2. `anchors/gap_pairs.jpg`：不看这份 skill 时最容易做出来的（扁平矢量、放射光底、人缩成角落头像、整句字幕）vs 参考。
 3. `examples/munger-life/near_misses.jpg`：我们自己做《芒格的一生》时差一点就对的几处（像 PPT 的运镜、没有理由的换场、整屏空一下、主角消失），每处一句差在哪。
 4. `style-card.md`：全部判断，15 节，每条带参考片时间点。
 
@@ -100,5 +100,5 @@ description: 大头剪贴人物短片：9:16 竖屏、15–60 秒，讲一个大
 | `references/taste.md` | 用户定过的口味规则（带范围） |
 | `examples/munger-life/` | 《芒格的一生》：导演表、每个换场为什么这样接、成片接触表、近失对。是"怎么做过一次"，不是可以抄的画面 |
 | `examples/hardcases-01/` | 《商业狠人图鉴 01》（59s，用户整条配音）：动作分镜（动作语法、8 个角色）、舞台调度导演表、注意力层级导演表（特效盖内容 → 一拍一个焦点；开头钩子不减；9:16 安全区；字幕）、第 1/2/3 版和第 3/4.1 版同一时刻的近失对 |
-| `anchors/` | taste_board / gap_pairs / detail：参考片原帧（earn.edits，见 README「引用说明」）；own_taste_board / own_gap_pairs：用本 skill 做的片子 |
+| `anchors/` | taste_board / gap_pairs / detail：参考片原帧（earn.edits，见 README「引用说明」）；own_taste_board：用本 skill 做的片子 |
 | `scripts/` | `stage.js`（含 `captions()` 字幕轨）`acts.js`（动作语法）`ui_check.py`（平台界面遮挡自查）`look.css` `new_film.py` `bighead.py` `cutout.py` `split_sheet.py`（一张图切几件道具）`gen_image.py`（生图，四种方式）`config.py`（配音 / 生图设置）`doctor.py`（环境自检）`temp_voice.py` `voice_timeline.py`（整条正式配音 → 时间线）`ref_timeline.py` `sfx.py` `sfxlist.mjs` `mix.py` `frames.mjs` `verify.py` `vsr.py`（量片子：换场、运镜曲线、平涂占比、帧条）；`tts_examples/`（接豆包 / OpenAI TTS 的示例） |
